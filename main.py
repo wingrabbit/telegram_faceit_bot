@@ -18,3 +18,6 @@ for player in players_ids:
     current_player = faceit_player.Player(user_info["nickname"], user_info["player_id"],
                                           user_info["games"]["csgo"]["faceit_elo"])
     players_array.append(current_player)
+
+for player in players_array:
+    print(str(player))
