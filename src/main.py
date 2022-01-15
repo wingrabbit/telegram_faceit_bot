@@ -1,9 +1,9 @@
 import requests
-import faceit_player
+from src.model import faceit_player
 
 app_auth_key = "bf8c2a3e-c583-4411-8e6d-dc14aaaa529b"
 players_array = []
-players_ids = open("players_ids.txt")
+players_ids = open("conf/players_ids.txt")
 
 
 def get_user_data(user_id):
