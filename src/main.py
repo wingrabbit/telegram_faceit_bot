@@ -43,11 +43,10 @@ for player in players_ids:
 
     # Getting player match statistics from faceit "/stats/csgo/" endpoint
     user_matches = get_user_data(player, "/stats/csgo")
-    player_matches_count = user_matches["lifetime"]
 
     # Creating player with parameters: name, ID, ELO, matches
     current_player = faceit_player.Player(user_info["nickname"], user_info["player_id"],
-                                          user_info["games"]["csgo"]["faceit_elo"], player_matches_count["Matches"])
+                                          user_info["games"]["csgo"]["faceit_elo"], user_matches["lifetime"]["Matches"])
 
     players_array.append(current_player)
 
