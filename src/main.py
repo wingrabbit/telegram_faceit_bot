@@ -29,7 +29,7 @@ def check_elo_difference(player_to_check):
     # getting update user elo
     player_updated_elo = player_updated_info["games"]["csgo"]["faceit_elo"]
 
-    if player_updated_elo != player_updated_elo:
+    if player_current_elo != player_updated_elo:
         player_elo_difference = player_current_elo - player_updated_elo
     else:
         player_elo_difference = 0
