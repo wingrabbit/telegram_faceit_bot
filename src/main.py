@@ -1,11 +1,8 @@
-import requests
 from src.model import faceit_player
 import faceit_api
 
 players_array = []
 players_ids = open("players_ids.txt")
-
-FACEIT_API_URL = f"https://open.faceit.com/data/v4/players/"
 
 
 def check_elo_difference(player_to_check):
